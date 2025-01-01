@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 100%;
+        }
+        textarea {
+            height: 120px;
+           
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        #subtitle,h1 {
+            animation: glow 5s infinite;
+        }
+        @keyframes glow{   
+            0%{color: aqua;}
+            25%{color: yellow;}
+            50%{color: orange;}
+            75%{color: red;}
+            100%{color: aqua;}
+        }
+        form {
+            animation:fade 1s ease-in;
+        }
+        @keyframes fade{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p id="subtitle">We'd love to hear from you! Please fill out the form below.</p>
+    </header>
+    <div class="container">
+        <form action="html.html" method="post">
+            <label >Name:</label>
+            <input type="text" placeholder="Your Name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Your Email Address" required>
+
+            <label>Subject:</label>
+            <input type="text"  placeholder="Subject" required>
+
+            <label>Message:</label>
+            <textarea placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Car Showcase. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#subtitle {
+    animation:glow 5s infinite;
+}
+@keyframes glow{   
+    0%{color: aqua;}
+    25%{color: yellow;}
+    50%{color: orange;}
+    75%{color: red;}
+    100%{color: aqua;}
+}
+body {
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px ;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        }
+}
+h1 {
+    animation:fade 2s ease-in;
+}
+#button,select{
+    color: white;
+    animation:glow 5s infinite;
+    text-decoration: none;
+    background-color: #444;
+    margin:  3px 0px 3px 0px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.car-gallery {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car {
+    animation:slide 1s ease-in;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 300px;
+}
+@keyframes slide {
+    0% {
+        opacity: 1;
+        translate: -100px;
+    }
+    50% {
+        translate: 100px;
+        }
+    100% {
+        opacity: 1;
+        translate: 0px;
+    }
+}
+.car img {
+    width: 300px;
+    height: auto;
+}
+.car p {
+    margin: 0;
+}
